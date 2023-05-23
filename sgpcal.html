@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			SGPACAL 
+		</title>
+		<script type="text/javascript">
+			function getOption() {
+				branch= document.querySelector('#branch');
+				branchval = branch.value;
+				sem = document.querySelector('#sem');
+				semval= sem.value;
+
+				if(branchval=="CSE" && semval=="1"){
+					window.open("csesem1.html")
+				}
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<h1 style="color: green">
+			CALCULATE SGPA
+		</h1>		
+		<p> Select Your Branch from below :
+			<select id="branch">
+				<option value="CSE">CSE</option>
+				<option value="ECE">ECE</option>
+				<option value="EEE">EEE</option>
+				<option value="MECH">MECH</option>
+				<option value="CIVIL">CIVIL</option>
+				<option value="IT">IT</option>
+
+			</select>
+		</p>
+		<p> Select Your SEM from below :
+			<select id="sem">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				
+			</select>
+		</p>
+		<p>
+			<h1 id="ot" ></h1>
+		</p>
+		<button onclick="getOption()"> SUBMIT </button>		
+	</body>
+
+</html>
